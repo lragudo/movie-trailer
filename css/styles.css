@@ -8,13 +8,14 @@
 
 
 
-
+/* parent container */
 main  {
   margin: 0;
   display: grid;
   grid-template-columns: 1fr;
 }
 
+/* cast of the movie */
 .cast{
   display: flex;
   flex-wrap: wrap;
