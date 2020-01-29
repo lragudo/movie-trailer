@@ -4,10 +4,23 @@
   * Change Background Color
   * Outline Elements
 */
+/*************** 
+STYLE GUIDE:
+*dark red: 0F1717 (primary)
+*light red: C21D2D
+*tan: 917975
+*light gray: 92A1A4
+*medium gray: 627374
+*dark gray: 363C3A (primary)
+*black: 0F1717
+***************/
 
 
 
 
+/*************** 
+BEGIN STYLING
+***************/
 /* parent container */
 main  {
   margin: 0;
@@ -44,7 +57,35 @@ main  {
   
 }
 
-/* Tablet:  
+/*************** 
+CUSTOM UI CONTROLS
+***************/
+
+.plyr--full-ui input[type="range"]{
+  color: red;
+}
+
+.plyr__control--overlaid{
+  background: red;
+}
+
+.plyr--video .plyr__control:hover{
+  background: red;
+}
+
+.plyr--full-ui input[type="range"].plyr__tab-focus::-moz-range-track {
+
+  box-shadow: 0 0 0 5px rgba(119, 115, 115, 0.5);
+  outline: 0;
+}
+
+
+/*************** 
+MEDIA QUERYS
+************** */
+
+
+/* TABLET:  
   * 768px = 48em 
     1023px = 63.9375em;
 */
@@ -60,7 +101,7 @@ main  {
     
 }
 
-/* Desktop: 
+/* DESKTOP: 
   * 1024px = 64em
   * 64em and larger
 */
@@ -76,7 +117,7 @@ main  {
 
 }
 
-/* Wide Desktop: 
+/* WIDE DESKTOP: 
   * 1440px = 90em
   * 90em and wider
 */
