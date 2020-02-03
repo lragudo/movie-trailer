@@ -6,7 +6,7 @@
 */
 /*************** 
 STYLE GUIDE:
-*dark red: 0F1717 (primary)
+*dark red: 720006 (primary)
 *light red: C21D2D
 *tan: 917975
 *light gray: 92A1A4
@@ -21,9 +21,16 @@ STYLE GUIDE:
 /*************** 
 BEGIN STYLING
 ***************/
+
+
+body{
+  background: #363C3A;
+  color: white;
+  font-family: 'Montserrat', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 /* parent container */
 main  {
-  margin: 0;
+  margin: 1rem;
   display: grid;
   grid-template-columns: 1fr;
 }
@@ -34,28 +41,15 @@ main  {
   flex-wrap: wrap;
 }
 
-/* Media Queries */
-/* 
-  Mobile: 
-  * 320px = 20em
-  * 767px = 47.9375em
-*/
-@media only screen 
-  and (min-width: 0) 
-  and (max-width: 48em)  { 
-    
-    /* Diagnostic Styling. Delete When Done. */
-    body:before {
-         background: yellow;
-         content: "Mobile Size";
-    }
-    
-    .cast {
-      text-align: center;
-      justify-content: center;
-    }
-  
+.video img{
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  right: 0px;
 }
+
+
+
 
 /*************** 
 CUSTOM UI CONTROLS
@@ -83,7 +77,28 @@ CUSTOM UI CONTROLS
 /*************** 
 MEDIA QUERYS
 ************** */
-
+/* Media Queries */
+/* 
+  Mobile: 
+  * 320px = 20em
+  * 767px = 47.9375em
+*/
+@media only screen 
+  and (min-width: 0) 
+  and (max-width: 48em)  { 
+    
+    /* Diagnostic Styling. Delete When Done. */
+    body:before {
+         background: orange;
+         content: "Mobile Size";
+    }
+    
+    .cast {
+      text-align: center;
+      justify-content: center;
+    }
+  
+}
 
 /* TABLET:  
   * 768px = 48em 
@@ -95,7 +110,7 @@ MEDIA QUERYS
     
   /* Diagnostic Styling. Delete When Done. */
   body:before {
-       background: yellow;
+       background: orange;
        content: "Tablet Size";
   } 
     
@@ -111,7 +126,7 @@ MEDIA QUERYS
   
   /* Diagnostic Styling. Delete When Done. */
   body:before {
-       background: yellow;
+       background: orange;
        content: "Desktop Size";
   }
 
@@ -125,7 +140,7 @@ MEDIA QUERYS
   
   /* Diagnostic Styling. Delete When Done. */
   body:before {
-       background: yellow;
+       background: orange;
        content: "Wide Desktop Size";
   }
 
