@@ -30,7 +30,6 @@ body{
 }
 /* parent container */
 main  {
-  margin: 1rem;
   display: grid;
   grid-template-columns: 1fr;
 }
@@ -47,6 +46,11 @@ main  {
   top: 0px;
   right: 0px;
 }
+
+.info{
+  margin: 0 20%;
+}
+
 
 
 
@@ -95,6 +99,7 @@ MEDIA QUERYS
     
     .cast {
       text-align: center;
+      display: flex;
       justify-content: center;
     }
   
@@ -113,6 +118,10 @@ MEDIA QUERYS
        background: orange;
        content: "Tablet Size";
   } 
+  .cast{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+ 
     
 }
 
@@ -121,13 +130,17 @@ MEDIA QUERYS
   * 64em and larger
 */
 @media screen 
-  and (min-width: 64em) 
-  and (max-width: 90em) { 
+  and (min-width: 64em) { 
   
   /* Diagnostic Styling. Delete When Done. */
   body:before {
        background: orange;
        content: "Desktop Size";
+  }
+  .cast{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 0 10%;
+
   }
 
 }
@@ -142,6 +155,9 @@ MEDIA QUERYS
   body:before {
        background: orange;
        content: "Wide Desktop Size";
+  }
+  .cast {
+    margin: 0 20%;
   }
 
 }
