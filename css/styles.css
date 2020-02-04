@@ -24,8 +24,8 @@ BEGIN STYLING
 
 
 body{
-  background: #363C3A;
-  color: white;
+  background: rgb(22, 24, 23);
+  color: #C21D2D;
   font-family: 'Montserrat', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -33,6 +33,9 @@ body{
   text-align: centered;
   display: grid;
   grid-template-columns: 1fr;
+}
+.cast img{
+  width: 100%;
 }
 
 .trailer img{
@@ -49,7 +52,33 @@ body{
 .trailer div{
   margin: 3rem;
 }
+ blockquote{
+  color: white;
+  font-style: italic;
+  font-size: 2rem;
+  border-left: 3px solid white;
+  padding-left: 1rem;
+}
+a{
+  color: #C21D2D;
+}
+a:hover{
+  text-decoration: none;
+  color: white;
 
+}
+li::marker{
+  display: none;
+}
+
+aside, footer{
+  display: flex;
+  justify-content: center;
+}
+ul, li{
+  display: inline;
+  padding: .5rem;
+}
 
 
 
@@ -109,7 +138,9 @@ MEDIA QUERYS
     .trailer div{
       margin: 1rem;
     }
-    
+    .cast img{
+      width: 75%;
+    }
   
 }
 
@@ -127,7 +158,7 @@ MEDIA QUERYS
        content: "Tablet Size";
   }  */
   .cast{
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
   .cast, .info{
     margin: 0 10%;
@@ -154,7 +185,7 @@ MEDIA QUERYS
        content: "Desktop Size";
   } */
   .cast{
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
    
   }
   .cast, .info{
