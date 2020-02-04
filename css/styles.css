@@ -29,10 +29,6 @@ body{
   font-family: 'Montserrat', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-/* parent container */
-main  {
-
-}
 .cast{
   text-align: centered;
   display: grid;
@@ -57,7 +53,7 @@ main  {
 
 
 
-/* Tablet:  
+
 /*************** 
 CUSTOM UI CONTROLS
 ***************/
@@ -82,6 +78,13 @@ outline: 0;
 .plyr--video .plyr__controls {
   background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0));
 }
+
+div .plyr .plyr--full-ui .plyr--video .plyr--youtube .plyr--fullscreen-enabled .plyr__poster-enabled .plyr--playing plyr--hide-controls{
+margin: 0;
+display: flex;
+justify-content: center;
+}
+
 /*************** 
 MEDIA QUERYS
 ************** */
@@ -91,14 +94,20 @@ MEDIA QUERYS
   and (max-width: 48em)  { 
     
     /* Diagnostic Styling. Delete When Done. */
-    body:before {
+    /* body:before {
          background: orange;
          content: "Mobile Size";
-    }
+    } */
 
     .cast, .info{
       grid-template-columns: 1fr;
       margin: 0 10%;
+    }
+    .trailer img{
+      display: none;
+    }
+    .trailer div{
+      margin: 1rem;
     }
     
   
@@ -113,17 +122,22 @@ MEDIA QUERYS
   and (max-width: 64em)  {
     
   /* Diagnostic Styling. Delete When Done. */
-  body:before {
+  /* body:before {
        background: orange;
        content: "Tablet Size";
-  } 
+  }  */
   .cast{
     grid-template-columns: 1fr 1fr 1fr;
   }
   .cast, .info{
     margin: 0 10%;
   }
-    
+  div .plyr .plyr--full-ui .plyr--video .plyr--youtube .plyr--fullscreen-enabled .plyr__poster-enabled .plyr--playing plyr--hide-controls{
+    margin-top: 1.25rem;
+    }
+    .info{
+      margin-top: 7rem;
+    }
 }
 
 
@@ -135,16 +149,20 @@ MEDIA QUERYS
 @media screen and (min-width: 64em) { 
   
   /* Diagnostic Styling. Delete When Done. */
-  body:before {
+  /* body:before {
        background: orange;
        content: "Desktop Size";
-  }
+  } */
   .cast{
     grid-template-columns: 1fr 1fr 1fr 1fr;
    
   }
-.cast, .info{
-  margin: 0 15%;
+  .cast, .info{
+    margin: 0 15%;
+  }
+  .info{
+    margin-top: 13rem;
+  }
 }
 
 
@@ -162,6 +180,9 @@ MEDIA QUERYS
   }
   .cast, .info{
     margin: 0 20%;
+  }
+  .info{
+    margin-top: 16rem;
   }
 
 }

@@ -5,7 +5,6 @@ const player = new Plyr("#player", {
     keyboard: {focused: true, global: true},
     ads: { enabled: false, publisherId: '' },
     autoplay: true,
-    clickToPlay: true,
     loop: { active: true }
     
   });
