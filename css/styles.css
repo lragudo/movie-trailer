@@ -175,6 +175,9 @@ MEDIA QUERYS
       grid-template-columns: 1fr;
       grid-row: 1fr 1fr;
     }
+    .quote blockquote{
+      font-size: 1.5rem;
+    }
   
 }
 
@@ -200,6 +203,9 @@ MEDIA QUERYS
   div .plyr .plyr--full-ui .plyr--video .plyr--youtube .plyr--fullscreen-enabled .plyr__poster-enabled .plyr--playing plyr--hide-controls{
     margin-top: 1.25rem;
     }
+    .quote blockquote{
+      font-size: 1.5rem;
+    }
 }
 
 
@@ -222,6 +228,9 @@ MEDIA QUERYS
   .other-layout{
     margin: 5% 15%;
   }
+  .quote blockquote{
+    margin: 0 6rem;
+  }
 }
 
 
@@ -239,6 +248,10 @@ MEDIA QUERYS
   }
   .other-layout{
     margin: 5% 20%;
+  }
+  .quote blockquote{
+    font-size: 2.75rem;
+    margin: 0 7rem;
   }
 
 }
